@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "week": "4月第2週",
+        "title": "インポスターパーティー",
+        "date": "2026-04-14",
+        "views": 34000,
+        "members": "永岡蓮王|井上一太",
+        "url": "https://youtu.be/Lpzo3U4_Yd4"
+    },
+    {
+        "id": 2,
+        "week": "4月第3週",
+        "title": "松竹座裏側",
+        "date": "2026-04-21",
+        "views": 114000,
+        "members": "岡佑吏|浦陸斗|大内リオン|山中一輝",
+        "url": "https://youtu.be/h2mQzaC_IbE"
+    },
+    {
+        "id": 3,
+        "week": "4月第4週",
+        "title": "松竹座王",
+        "date": "2026-04-28",
+        "views": 55000,
+        "members": "岡佑吏|浦陸斗|大内リオン|山中一輝",
+        "url": "https://youtu.be/jM0Lau1RnX4"
+    },
+    {
+        "id": 4,
+        "week": "5月第1週",
+        "title": "幼少期写真で神経衰弱",
+        "date": "2026-05-05",
+        "views": 57000,
+        "members": "真弓孟之|永岡蓮王|浦陸斗|山中一輝",
+        "url": "https://youtu.be/GeF-oZd08po"
+    },
+    {
+        "id": 5,
+        "week": "5月第2週",
+        "title": "親アンケート前編",
+        "date": "2026-05-12",
+        "views": 101000,
+        "members": "真弓孟之|岡佑吏|永岡蓮王|浦陸斗|山中一輝",
+        "url": "https://youtu.be/eABqbHlppds"
+    },
+    {
+        "id": 6,
+        "week": "5月第3週",
+        "title": "親アンケート後編",
+        "date": "2026-05-19",
+        "views": 85000,
+        "members": "真弓孟之|岡佑吏|永岡蓮王|浦陸斗|山中一輝",
+        "url": "https://youtu.be/dlPgnKOKEE8"
+    },
+    {
+        "id": 7,
+        "week": "5月第4週",
+        "title": "大食い対決",
+        "date": "2026-05-26",
+        "views": 65000,
+        "members": "浦陸斗|大内リオン|山中一輝",
+        "url": "https://youtu.be/nHOHgj-sUSg"
+    },
+    {
+        "id": 8,
+        "week": "6月第2週",
+        "title": "水三番勝負",
+        "date": "2026-06-09",
+        "views": 46000,
+        "members": "真弓孟之|永岡蓮王|井上一太",
+        "url": "https://youtu.be/7YH1hCh5Za4"
+    },
+    {
+        "id": 9,
+        "week": "6月第3週",
+        "title": "井上一太できる？できない？",
+        "date": "2026-06-16",
+        "views": 43000,
+        "members": "真弓孟之|永岡蓮王|井上一太",
+        "url": "https://youtu.be/AGRk8xrx6fo"
+    },
+    {
+        "id": 10,
+        "week": "6月第4週",
+        "title": "登山前編",
+        "date": "2026-06-23",
+        "views": 39000,
+        "members": "真弓孟之|岡佑吏|永岡蓮王|井上一太|大内リオン",
+        "url": "https://youtu.be/1HV5CoM0i2M"
+    },
+    {
+        "id": 11,
+        "week": "6月第5週",
+        "title": "登山後編",
+        "date": "2026-06-30",
+        "views": 33000,
+        "members": "真弓孟之|岡佑吏|永岡蓮王|井上一太|大内リオン",
+        "url": "https://youtu.be/nAoLXf0DTJ4"
+    },
+    {
+        "id": 12,
+        "week": "7月第1週",
+        "title": "コンテンポラリーダンス",
+        "date": "2026-07-07",
+        "views": 33000,
+        "members": "岡佑吏|永岡蓮王|井上一太|山中一輝",
+        "url": "https://youtu.be/R10RMVuUur4"
+    },
+    {
+        "id": 13,
+        "week": "7月第2週",
+        "title": "美文字マスター",
+        "date": "2026-07-14",
+        "views": 47000,
+        "members": "真弓孟之|浦陸斗|大内リオン|山中一輝",
+        "url": "https://youtu.be/qCpsSS6sdT8"
+    },
+    {
+        "id": 14,
+        "week": "7月第3週",
+        "title": "激辛麻辣湯",
+        "date": "2026-07-21",
+        "views": 86000,
+        "members": "真弓孟之|浦陸斗|大内リオン",
+        "url": "https://youtu.be/eVzJA3I3RaM"
+    },
+    {
+        "id": 15,
+        "week": "7月第4週",
+        "title": "消しバト",
+        "date": "2026-07-28",
+        "views": 33000,
+        "members": "真弓孟之|岡佑吏|永岡蓮王|井上一太",
+        "url": "https://youtu.be/nfmBx67Ekak"
+    },
+    {
+        "id": 16,
+        "week": "8月第1週",
+        "title": "むかし話ストーリーテラー",
+        "date": "2026-08-04",
+        "views": 16000,
+        "members": "真弓孟之|永岡蓮王|浦陸斗|大内リオン",
+        "url": "https://youtu.be/32jzIBum4s4"
+    }
+]
