@@ -393,7 +393,7 @@ def export_locipo():
 def export_update():
 
     update = {
-        "last_update": datetime.now().strftime("%Y/%m/%d %H:%M")
+        "last_update": datetime.now().strftime("%Y/%m/%d %H:00")
     }
 
     with open(
