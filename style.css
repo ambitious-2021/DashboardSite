@@ -101,7 +101,7 @@ body {
 
 }
 
-.content img {
+#dashboardImage {
 
     width: 92%;
 
@@ -111,11 +111,11 @@ body {
 
     box-shadow:0 8px 25px rgba(0,0,0,.18);
 
-    transition: .25s;
+    transition:.25s;
 
 }
 
-.content img:hover{
+#dashboardImage:hover {
 
     transform: scale(1.01);
 
@@ -160,6 +160,233 @@ body {
 
 .update-area{
     text-align:center;
+}
+
+/* =========================
+   動画一覧
+========================= */
+
+.video-list{
+
+    width:92%;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+    text-align:left;
+
+}
+
+.video-list h2{
+
+    color:#F57C00;
+
+    margin-bottom:20px;
+
+}
+
+/* =========================
+   動画カード
+========================= */
+
+.video-card{
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:flex-start;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:16px 20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    margin-bottom:20px;
+
+    transition:.2s;
+
+}
+
+.video-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.video-thumbnail{
+
+    width: 280px;
+
+    aspect-ratio:16 / 9;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    flex-shrink:0;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+
+    transition:.25s;
+
+}
+
+.video-thumbnail:hover{
+    transform:scale(1.03);
+}
+
+.video-info{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding-top: 4px;
+
+}
+
+.video-week{
+
+    color:#F57C00;
+
+    font-weight:bold;
+
+    font-size:14px;
+
+}
+
+.video-title{
+
+    margin:8px 0;
+
+    font-size:22px;
+
+}
+
+.video-info p{
+
+    margin:6px 0;
+
+}
+
+.video-info a{
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    color:white;
+
+    background:#F57C00;
+
+    padding:10px 20px;
+
+    font-size: 16px;
+
+    border-radius:24px;
+
+    text-decoration:none;
+
+    align-self:flex-end;
+
+    margin-top:auto;
+
+    margin-right:0;
+
+    margin-bottom:0;
+}
+
+.video-info a:hover{
+
+    background:#e56d00;
+
+}
+
+.video-views{
+
+    margin:10px 0;
+
+}
+
+.video-views .label{
+
+    display:block;
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+.video-views .count{
+    display:block;
+    font-size:24px;
+    font-weight:bold;
+    color:#222;
+    line-height:1.5;
+    overflow-wrap:anywhere;
+}
+
+.video-members{
+
+    margin-top:12px;
+
+}
+
+.video-members .label{
+
+    display:block;
+
+    font-size:13px;
+
+    color:#777;
+
+    margin-bottom:2px;
+
+}
+
+.video-members .members{
+
+    display:block;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+    margin-top:0;
+}
+
+.video-ended{
+
+    display:inline-block;
+
+    align-self:flex-end;
+
+    margin-top:auto;
+
+    padding:10px 20px;
+
+    border-radius:24px;
+
+    background:#e0e0e0;
+
+    color:#666;
+
+    font-weight:bold;
+
+}
+
+.ranking-history {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    line-height: 1.6;
 }
 
 /* =========================
@@ -303,9 +530,9 @@ body {
         padding-top: 20px;
     }
 
-    .content img{
-        width: 98%;
-        border-radius: 8px;
+    #dashboardImage{
+        width:98%;
+        border-radius:8px;
     }
 
     .history{
@@ -320,6 +547,36 @@ body {
         flex-direction:column;
 
         gap:4px;
+
+    }
+
+    .video-card{
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .video-thumbnail{
+
+        width:100%;
+
+        max-width:none;
+
+    }
+
+    .video-info{
+
+        width:100%;
+
+    }
+
+    .video-info a{
+
+        align-self:flex-end;
+
+        padding:10px 22px;
 
     }
 

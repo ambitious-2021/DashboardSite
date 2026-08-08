@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "week": "#1",
+        "title": "絶品いただきシャス！ #1",
+        "date": "2026-05-08",
+        "likes": 1803,
+        "best_ranking": 49,
+        "members": "真弓孟之・山中一輝",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 2,
+        "week": "#2",
+        "title": "絶品いただきシャス！ #2",
+        "date": "2026-05-22",
+        "likes": 1139,
+        "best_ranking": 50,
+        "members": "永岡蓮王・井上一太",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 3,
+        "week": "#3",
+        "title": "絶品いただきシャス！ #3",
+        "date": "2026-06-12",
+        "likes": 1098,
+        "best_ranking": "",
+        "members": "岡佑吏・浦陸斗",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 4,
+        "week": "#4",
+        "title": "絶品いただきシャス！ #4",
+        "date": "2026-06-26",
+        "likes": 1450,
+        "best_ranking": 43,
+        "members": "真弓孟之・永岡蓮王",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 5,
+        "week": "#5",
+        "title": "絶品いただきシャス！ #5",
+        "date": "2026-07-10",
+        "likes": 1220,
+        "best_ranking": "",
+        "members": "浦陸斗・山中一輝",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 6,
+        "week": "#6",
+        "title": "絶品いただきシャス！ #6",
+        "date": "2026-07-24",
+        "likes": 1360,
+        "best_ranking": 41,
+        "members": "永岡蓮王・井上一太",
+        "url": "https://tver.jp/episodes/epsqkuuj0q",
+        "available": true
+    }
+]

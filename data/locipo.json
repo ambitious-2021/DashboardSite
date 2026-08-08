@@ -1,0 +1,286 @@
+[
+    {
+        "id": 1,
+        "week": "2026-04-14",
+        "title": "岡佑吏・山中一輝",
+        "date": "2026-04-15",
+        "ranking_history": [
+            "2位",
+            "4位",
+            "5位",
+            "9位",
+            "13位",
+            "5位",
+            "7位"
+        ],
+        "comments": 57,
+        "school": "名古屋西高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 2,
+        "week": "2026-04-21",
+        "title": "岡佑吏・山中一輝",
+        "date": "2026-04-22",
+        "ranking_history": [
+            "4位",
+            "4位",
+            "7位",
+            "14位",
+            "10位",
+            "8位",
+            "5位"
+        ],
+        "comments": 66,
+        "school": "名古屋西高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 3,
+        "week": "2026-04-28",
+        "title": "永岡蓮王・井上一太",
+        "date": "2026-04-29",
+        "ranking_history": [
+            "3位",
+            "2位",
+            "5位",
+            "10位",
+            "11位",
+            "11位"
+        ],
+        "comments": 31,
+        "school": "東邦高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 4,
+        "week": "2026-05-12",
+        "title": "永岡蓮王・井上一太",
+        "date": "2026-05-13",
+        "ranking_history": [
+            "3位",
+            "4位",
+            "14位",
+            "12位",
+            "16位",
+            "14位",
+            "7位"
+        ],
+        "comments": 22,
+        "school": "東邦高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 5,
+        "week": "2026-05-19",
+        "title": "真弓孟之・岡佑吏",
+        "date": "2026-05-20",
+        "ranking_history": [
+            "4位",
+            "3位",
+            "3位",
+            "7位",
+            "7位",
+            "4位",
+            "2位"
+        ],
+        "comments": 25,
+        "school": "加納高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 6,
+        "week": "2026-05-26",
+        "title": "真弓孟之・岡佑吏",
+        "date": "2026-05-27",
+        "ranking_history": [
+            "4位",
+            "3位",
+            "6位",
+            "6位",
+            "8位",
+            "6位",
+            "6位"
+        ],
+        "comments": 34,
+        "school": "加納高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 7,
+        "week": "2026-06-02",
+        "title": "山中一輝・浦陸斗",
+        "date": "2026-06-03",
+        "ranking_history": [
+            "2位",
+            "4位",
+            "8位",
+            "10位",
+            "9位",
+            "5位",
+            "8位"
+        ],
+        "comments": 73,
+        "school": "大垣養老高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 8,
+        "week": "2026-06-09",
+        "title": "山中一輝・浦陸斗",
+        "date": "2026-06-10",
+        "ranking_history": [
+            "3位",
+            "4位",
+            "5位",
+            "4位",
+            "6位",
+            "3位",
+            "4位"
+        ],
+        "comments": 53,
+        "school": "大垣養老高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 9,
+        "week": "2026-06-16",
+        "title": "岡佑吏・井上一太",
+        "date": "2026-06-17",
+        "ranking_history": [
+            "5位",
+            "6位",
+            "9位",
+            "8位",
+            "11位",
+            "7位",
+            "8位"
+        ],
+        "comments": 27,
+        "school": "中部大学春日丘高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 10,
+        "week": "2026-06-23",
+        "title": "岡佑吏・井上一太",
+        "date": "2026-06-24",
+        "ranking_history": [
+            "5位",
+            "6位",
+            "10位",
+            "12位",
+            "14位",
+            "8位",
+            "17位"
+        ],
+        "comments": 28,
+        "school": "中部大学春日丘高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 11,
+        "week": "2026-06-30",
+        "title": "真弓孟之・大内リオン",
+        "date": "2026-07-01",
+        "ranking_history": [
+            "5位",
+            "5位",
+            "4位",
+            "4位",
+            "5位",
+            "4位",
+            "3位"
+        ],
+        "comments": 41,
+        "school": "高田高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 12,
+        "week": "2026-07-07",
+        "title": "真弓孟之・大内リオン",
+        "date": "2026-07-08",
+        "ranking_history": [
+            "4位",
+            "3位",
+            "5位",
+            "2位",
+            "6位",
+            "3位",
+            "4位"
+        ],
+        "comments": 43,
+        "school": "高田高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 13,
+        "week": "2026-07-14",
+        "title": "真弓孟之・永岡蓮王",
+        "date": "2026-07-15",
+        "ranking_history": [
+            "3位",
+            "3位",
+            "5位",
+            "2位",
+            "3位",
+            "4位",
+            "5位"
+        ],
+        "comments": 84,
+        "school": "一宮高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 14,
+        "week": "2026-07-21",
+        "title": "真弓孟之・永岡蓮王",
+        "date": "2026-07-22",
+        "ranking_history": [
+            "3位",
+            "5位",
+            "8位",
+            "4位",
+            "7位",
+            "6位",
+            "5位"
+        ],
+        "comments": 44,
+        "school": "一宮高校",
+        "url": "",
+        "available": false
+    },
+    {
+        "id": 15,
+        "week": "2026-07-28",
+        "title": "岡佑吏・浦陸斗",
+        "date": "2026-07-29",
+        "ranking_history": [
+            "4位",
+            "5位",
+            "6位",
+            "11位",
+            "10位",
+            "8位",
+            "8位"
+        ],
+        "comments": 63,
+        "school": "名古屋市立大学",
+        "url": "https://locipo.jp/creative/ca4563a8-c7fa-49a7-9338-ec78ac4b70ae",
+        "available": false
+    }
+]
