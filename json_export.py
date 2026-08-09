@@ -11,6 +11,21 @@ LOCIPO_FILE = BASE_DIR.parent / "LocipoDashboard" / "data" / "data.xlsx"
 
 OUTPUT_DIR = BASE_DIR / "data"
 
+def is_blank(value):
+    if value is None:
+        return True
+
+    if pd.isna(value):
+        return True
+
+    if str(value).strip() == "":
+        return True
+
+    if str(value).strip().lower() == "nan":
+        return True
+
+    return False
+
 BASE_DIR = Path(__file__).resolve().parent
 
 def export_youtube():
@@ -87,14 +102,29 @@ def export_youtube():
     # 未入力チェック
     for record in records:
 
+        if is_blank(record["title"]):
+            print(
+                f'⚠ YouTube {record["week"]} の動画タイトルが未入力です'
+            )
+
+        if is_blank(record["members"]):
+            print(
+                f'⚠ YouTube {record["week"]} の出演者が未入力です'
+            )
+
+        if is_blank(record["date"]):
+            print(
+                f'⚠ YouTube {record["week"]} の公開日が未入力です'
+            )
+
+        if is_blank(record["url"]):
+            print(
+                f'⚠ YouTube {record["week"]} のURLが未入力です'
+            )
+
         if record["views"] is None:
             print(
                 f'⚠ YouTube {record["week"]} の再生回数が未入力です'
-            )
-
-        if not record["url"] or record["url"] == "nan":
-            print(
-                f'⚠ YouTube {record["week"]} のURLが未入力です'
             )
 
     print("youtube.json を更新しました")
@@ -204,12 +234,22 @@ def export_itadakishasu():
     # 未入力チェック
     for record in records:
 
+        if is_blank(record["date"]):
+            print(
+                f'⚠ TVer {record["week"]} の配信開始日が未入力です'
+            )
+
+        if is_blank(record["members"]):
+            print(
+                f'⚠ TVer {record["week"]} の出演者が未入力です'
+            )
+
         if record["likes"] is None:
             print(
                 f'⚠ TVer {record["week"]} の高評価が未入力です'
             )
 
-        if record["available"] and not record["url"]:
+        if record["available"] and is_blank(record["url"]):
             print(
                 f'⚠ TVer {record["week"]} は配信中ですがURLが未入力です'
             )
@@ -334,6 +374,9 @@ def export_locipo():
             "title": str(card["動画タイトル"]),
             "date": distribution_date,
 
+            # 出演者
+            "members": str(card["動画タイトル"]),
+
             # 順位はDay1～最新まで全部保存
             "ranking_history": ranking_map.get(
                 no_date,
@@ -373,7 +416,22 @@ def export_locipo():
     # 未入力チェック
     for record in records:
 
-        if record["available"] and not record["url"]:
+        if is_blank(record["date"]):
+            print(
+                f'⚠ Locipo {record["week"]} の配信開始日が未入力です'
+            )
+
+        if is_blank(record["members"]):
+            print(
+                f'⚠ Locipo {record["week"]} の出演者が未入力です'
+            )
+
+        if is_blank(record["school"]):
+            print(
+                f'⚠ Locipo {record["week"]} の学校名が未入力です'
+            )
+
+        if record["available"] and is_blank(record["url"]):
             print(
                 f'⚠ Locipo {record["week"]} は配信中ですがURLが未入力です'
             )
@@ -383,7 +441,7 @@ def export_locipo():
                 f'⚠ Locipo {record["week"]} の順位データがありません'
             )
 
-        if record["comments"] == "":
+        if is_blank(record["comments"]):
             print(
                 f'⚠ Locipo {record["week"]} のコメント数が未入力です'
             )
