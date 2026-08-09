@@ -549,6 +549,13 @@ body {
     line-height: 1.6;
 }
 
+.video-views .youtube-history {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #222;
+}
+
 /* =========================
    更新履歴
 ========================= */

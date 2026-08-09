@@ -200,6 +200,25 @@ function createVideoCard(video, options) {
                     : ""
                 }
 
+            ${options.service === "youtube" && video.views_history?.length
+                ? `
+                    <div class="video-views">
+
+                        <span class="label">
+                            📊 再生回数推移（万回）
+                        </span>
+
+                        <span class="count youtube-history">
+                            ${video.views_history
+                                .map(value => (value / 10000).toFixed(1).replace(".0", ""))
+                                .join(" → ")}
+                        </span>
+
+                    </div>
+                `
+                : ""
+            }
+
             ${options.service === "locipo" && video.ranking_history?.length
                 ? `
                     <div class="video-views">

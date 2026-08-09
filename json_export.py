@@ -52,22 +52,30 @@ def export_youtube():
         no = str(card["No"]).strip()
 
         views = None
+        views_history = []
 
         # CardDataの1行目から、該当するNoの列を探す
         for col in range(1, carddata.shape[1]):
 
             if str(carddata.iloc[0, col]).strip() == no:
 
-                # その列の下から、最後に入力されている値を探す
+                # Day1～最新までの再生回数を取得
                 values = carddata.iloc[1:, col].dropna()
 
-                if len(values) > 0:
+                for value in values:
 
-                    views = values.iloc[-1]
+                    # 数値以外は除外
+                    if not isinstance(value, (int, float)):
+                        continue
 
-                    # 12345.0 → 12345
-                    if isinstance(views, float) and views.is_integer():
-                        views = int(views)
+                    if isinstance(value, float) and value.is_integer():
+                        value = int(value)
+
+                    views_history.append(value)
+
+                # 最新の再生回数
+                if len(views_history) > 0:
+                    views = views_history[-1]
 
                 break
 
@@ -82,6 +90,7 @@ def export_youtube():
             "title": str(card["動画タイトル"]),
             "date": date,
             "views": views,
+            "views_history": views_history,
             "members": str(card["出演者"]),
             "url": str(card["URL"])
         })
