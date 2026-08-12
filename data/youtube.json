@@ -274,15 +274,29 @@
         "week": "8月第1週",
         "title": "むかし話ストーリーテラー",
         "date": "2026-08-04",
-        "views": 28000,
+        "views": 30000,
         "views_history": [
             16000,
             22000,
             25000,
             27000,
-            28000
+            28000,
+            29000,
+            30000
         ],
         "members": "真弓孟之|永岡蓮王|浦陸斗|大内リオン",
         "url": "https://youtu.be/32jzIBum4s4"
+    },
+    {
+        "id": 17,
+        "week": "8月第2週",
+        "title": "キメ顔連続チャレンジ",
+        "date": "2026-08-11",
+        "views": 19000,
+        "views_history": [
+            19000
+        ],
+        "members": "岡佑吏|山中一輝",
+        "url": "https://youtu.be/HtBHXdOJBbg"
     }
 ]
