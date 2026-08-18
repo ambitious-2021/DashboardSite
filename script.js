@@ -129,13 +129,22 @@ function getMetric(video) {
 
 function getThumbnailUrl(video, service) {
 
-    if (!service.thumbnail) {
-        return "images/no_thumbnail.png";
+    // JSONにサムネイルURLがある場合
+    if (video.thumbnail) {
+        return video.thumbnail;
     }
 
-    const videoId = video.url.split("/").pop();
+    // YouTube
+    if (service.thumbnail && video.url) {
 
-    return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+        const videoId = video.url.split("/").pop();
+
+        return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+    }
+
+    // サムネイルがない場合
+    return "images/no_thumbnail.png";
 
 }
 

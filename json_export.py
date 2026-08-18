@@ -233,6 +233,21 @@ def export_itadakishasu():
             card["配信開始日"]
         ).strftime("%Y-%m-%d")
 
+        # サムネイルURL
+        thumbnail = ""
+
+        url = str(card["URL"]) if pd.notna(card["URL"]) else ""
+
+        if url:
+            episode_id = url.rstrip("/").split("/")[-1]
+
+            thumbnail = (
+                "https://image-cdn.tver.jp/"
+                "w=1200,dpr=1/images/content/"
+                "thumbnail/episode/xlarge/"
+                f"{episode_id}.jpg"
+            )
+
         records.append({
             "id": id_number,
             "week": no,
@@ -241,7 +256,8 @@ def export_itadakishasu():
             "likes": likes,
             "best_ranking": best_ranking,
             "members": card["メンバー"],
-            "url": str(card["URL"]) if pd.notna(card["URL"]) else "",
+            "url": url,
+            "thumbnail": thumbnail,
             "available": bool(card["配信中"]) if pd.notna(card["配信中"]) else False
         })
 
