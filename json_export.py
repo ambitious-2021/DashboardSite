@@ -46,10 +46,19 @@ def export_youtube():
 
     records = []
 
+    seen_nos = set()
+
     # Cardsを1件ずつ処理
     for _, card in cards.iterrows():
 
         no = str(card["No"]).strip()
+
+        if no in seen_nos:
+            print(
+                f'⚠ YouTube {no} が重複しています'
+            )
+
+        seen_nos.add(no)
 
         views = None
         views_history = []
@@ -153,10 +162,19 @@ def export_itadakishasu():
 
     records = []
 
+    seen_nos = set()
+
     # Cardsを1件ずつ処理
     for _, card in cards.iterrows():
 
         no = str(card["No"]).strip()
+
+        if no in seen_nos:
+            print(
+                f'⚠ いただきシャス {no} が重複しています'
+            )
+
+        seen_nos.add(no)
 
         # #1 → 1
         id_number = int(no.replace("#", ""))
@@ -367,11 +385,20 @@ def export_locipo():
 
     records = []
 
+    seen_dates = set()
+
     for index, card in cards.iterrows():
 
         no_date = pd.to_datetime(
             card["No"]
         ).strftime("%Y-%m-%d")
+
+        if no_date in seen_dates:
+            print(
+                f'⚠ Locipo {no_date} が重複しています'
+            )
+
+        seen_dates.add(no_date)
 
         distribution_date = pd.to_datetime(
             card["配信開始日"]
