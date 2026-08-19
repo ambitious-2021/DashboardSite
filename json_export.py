@@ -442,7 +442,11 @@ def export_locipo():
             ),
 
             "school": str(card["学校"]),
+
             "url": str(card["URL"]) if pd.notna(card["URL"]) else "",
+
+            "thumbnail": str(card["サムネイルURL"]) if pd.notna(card["サムネイルURL"]) else "",
+
             "available": bool(card["配信中"]) if pd.notna(card["配信中"]) else False
         }
 
@@ -486,6 +490,11 @@ def export_locipo():
         if record["available"] and is_blank(record["url"]):
             print(
                 f'⚠ Locipo {record["week"]} は配信中ですがURLが未入力です'
+            )
+
+        if record["available"] and is_blank(record["thumbnail"]):
+            print(
+                f'⚠ Locipo {record["week"]} は配信中ですがサムネイルURLが未入力です'
             )
 
         if not record["ranking_history"]:

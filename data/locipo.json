@@ -17,6 +17,7 @@
         "comments": 57,
         "school": "名古屋西高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -37,6 +38,7 @@
         "comments": 66,
         "school": "名古屋西高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -56,6 +58,7 @@
         "comments": 31,
         "school": "東邦高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -76,6 +79,7 @@
         "comments": 22,
         "school": "東邦高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -96,6 +100,7 @@
         "comments": 25,
         "school": "加納高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -116,6 +121,7 @@
         "comments": 34,
         "school": "加納高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -136,6 +142,7 @@
         "comments": 73,
         "school": "大垣養老高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -156,6 +163,7 @@
         "comments": 53,
         "school": "大垣養老高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -176,6 +184,7 @@
         "comments": 27,
         "school": "中部大学春日丘高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -196,6 +205,7 @@
         "comments": 28,
         "school": "中部大学春日丘高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -216,6 +226,7 @@
         "comments": 41,
         "school": "高田高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -236,6 +247,7 @@
         "comments": 43,
         "school": "高田高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -256,6 +268,7 @@
         "comments": 84,
         "school": "一宮高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -276,6 +289,7 @@
         "comments": 44,
         "school": "一宮高校",
         "url": "",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -296,6 +310,7 @@
         "comments": 63,
         "school": "名古屋市立大学",
         "url": "https://locipo.jp/creative/ca4563a8-c7fa-49a7-9338-ec78ac4b70ae",
+        "thumbnail": "",
         "available": false
     },
     {
@@ -310,6 +325,7 @@
         "comments": 47,
         "school": "名古屋市立大学",
         "url": "https://locipo.jp/creative/11bc5802-ce99-4354-96ec-a9fca67bb4af",
+        "thumbnail": "https://images.streaks.jp/locipo-prod/medias/4ed4cd68d29a4de1ab81dd76d86fcc69/posters/6f0a4b87-5f5e-4e2c-90a2-083fe55f4c6b.jpg",
         "available": true
     }
 ]
