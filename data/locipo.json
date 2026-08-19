@@ -297,5 +297,19 @@
         "school": "名古屋市立大学",
         "url": "https://locipo.jp/creative/ca4563a8-c7fa-49a7-9338-ec78ac4b70ae",
         "available": false
+    },
+    {
+        "id": 16,
+        "week": "2026-08-18",
+        "title": "岡佑吏・浦陸斗",
+        "date": "2026-08-19",
+        "members": "岡佑吏・浦陸斗",
+        "ranking_history": [
+            "3位"
+        ],
+        "comments": 47,
+        "school": "名古屋市立大学",
+        "url": "https://locipo.jp/creative/11bc5802-ce99-4354-96ec-a9fca67bb4af",
+        "available": true
     }
 ]
