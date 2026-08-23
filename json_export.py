@@ -8,6 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent
 YOUTUBE_FILE = BASE_DIR.parent / "YouTubeDashboard" / "data" / "data.xlsx"
 TVER_FILE = BASE_DIR.parent / "TVerDashboard" / "data" / "data.xlsx"
 LOCIPO_FILE = BASE_DIR.parent / "LocipoDashboard" / "data" / "data.xlsx"
+TVER_SINGLE_FILE = BASE_DIR.parent / "TVerDashboard" / "data" / "tver_single.xlsx"
 
 OUTPUT_DIR = BASE_DIR / "data"
 
