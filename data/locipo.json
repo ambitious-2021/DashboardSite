@@ -332,6 +332,22 @@
         "school": "名古屋市立大学",
         "url": "https://locipo.jp/creative/11bc5802-ce99-4354-96ec-a9fca67bb4af",
         "thumbnail": "https://images.streaks.jp/locipo-prod/medias/4ed4cd68d29a4de1ab81dd76d86fcc69/posters/6f0a4b87-5f5e-4e2c-90a2-083fe55f4c6b.jpg",
+        "available": false
+    },
+    {
+        "id": 17,
+        "week": "2026-08-25",
+        "title": "永岡蓮王・山中一輝",
+        "date": "2026-08-26",
+        "members": "永岡蓮王・山中一輝",
+        "ranking_history": [
+            "6位",
+            "6位"
+        ],
+        "comments": 57,
+        "school": "昭和高校",
+        "url": "https://locipo.jp/creative/eeb19e1a-cd9d-4cfa-b37c-e8c81fd36d73",
+        "thumbnail": "https://images.streaks.jp/locipo-prod/medias/c3db03722c5c47fb8c28d563fdba94b8/posters/676abd12-153d-4c3c-a4e7-5ab9386b9a7a.jpg",
         "available": true
     }
 ]
