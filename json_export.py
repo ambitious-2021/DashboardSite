@@ -300,6 +300,279 @@ def export_itadakishasu():
 
     print("itadakishasu.json を更新しました")
 
+def export_tver_single():
+
+    cards = pd.read_excel(
+        TVER_SINGLE_FILE,
+        sheet_name="Cards"
+    )
+
+    carddata = pd.read_excel(
+        TVER_SINGLE_FILE,
+        sheet_name="CardData",
+        header=None
+    )
+
+    records = []
+
+    seen_nos = set()
+
+    # -------------------------
+    # Cards → JSON
+    # -------------------------
+
+    for _, card in cards.iterrows():
+
+        no = str(card["No"]).strip()
+
+        # 重複チェック
+        if no in seen_nos:
+            print(
+                f'⚠ TVer単発 {no} が重複しています'
+            )
+
+        seen_nos.add(no)
+
+        # NoをIDにする
+        id_number = int(no)
+
+        # -------------------------
+        # CardDataから順位・高評価を取得
+        # -------------------------
+
+        ranking_col = None
+        likes_col = None
+
+        for col in range(1, carddata.shape[1]):
+
+            header_no = str(
+                carddata.iloc[0, col]
+            ).strip()
+
+            metric = str(
+                carddata.iloc[1, col]
+            ).strip()
+
+            if header_no == no:
+
+                if metric == "順位":
+                    ranking_col = col
+
+                elif metric == "高評価":
+                    likes_col = col
+
+        # -------------------------
+        # 順位履歴
+        # -------------------------
+
+        ranking_history = []
+
+        if ranking_col is not None:
+
+            for row in range(2, carddata.shape[0]):
+
+                value = carddata.iloc[row, ranking_col]
+
+                if pd.isna(value):
+                    ranking_history.append("")
+                    continue
+
+                if isinstance(value, float) and value.is_integer():
+                    value = int(value)
+
+                if str(value).strip() == "圏外":
+                    ranking_history.append("圏外")
+                else:
+                    ranking_history.append(
+                        f"{value}位"
+                    )
+
+        # -------------------------
+        # 高評価履歴
+        # -------------------------
+
+        likes_history = []
+
+        if likes_col is not None:
+
+            for row in range(2, carddata.shape[0]):
+
+                value = carddata.iloc[row, likes_col]
+
+                if pd.isna(value):
+                    likes_history.append(None)
+                    continue
+
+                if isinstance(value, float) and value.is_integer():
+                    value = int(value)
+
+                likes_history.append(value)
+
+        # -------------------------
+        # Day7時点の高評価
+        # -------------------------
+
+        likes = None
+
+        # Day7を上限として、最後に入力されている高評価を取得
+        check_history = likes_history[:7]
+
+        for value in reversed(check_history):
+
+            if value is not None:
+                likes = value
+                break
+
+        # -------------------------
+        # URL
+        # -------------------------
+
+        url = (
+            str(card["URL"])
+            if pd.notna(card["URL"])
+            else ""
+        )
+
+        # -------------------------
+        # TVerサムネイルURL
+        # -------------------------
+
+        thumbnail = ""
+
+        if url:
+
+            episode_id = (
+                url.rstrip("/")
+                .split("/")[-1]
+            )
+
+            thumbnail = (
+                "https://image-cdn.tver.jp/"
+                "w=1200,dpr=1/images/content/"
+                "thumbnail/episode/xlarge/"
+                f"{episode_id}.jpg"
+            )
+
+        # -------------------------
+        # 配信開始日
+        # -------------------------
+
+        date = pd.to_datetime(
+            card["配信開始日"]
+        ).strftime("%Y-%m-%d")
+
+        # -------------------------
+        # JSON用レコード
+        # -------------------------
+
+        records.append({
+
+            "id": id_number,
+
+            "no": no,
+
+            "title": str(
+                card["番組名"]
+            ),
+
+            "date": date,
+
+            "members": str(
+                card["メンバー"]
+            ),
+
+            "ranking_type": str(
+                card["ランキング種別"]
+            ),
+
+            # Day1～全期間
+            "ranking_history":
+                ranking_history,
+
+            # Excelの全期間
+            "likes_history":
+                likes_history,
+
+            # サイト表示用
+            # Day7時点で固定
+            "likes": likes,
+
+            "url": url,
+
+            "thumbnail": thumbnail,
+
+            "available": bool(
+                card["配信中"]
+            )
+            if pd.notna(card["配信中"])
+            else False
+        })
+
+    # -------------------------
+    # JSON出力
+    # -------------------------
+
+    with open(
+        OUTPUT_DIR / "tver_single.json",
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            records,
+            f,
+            ensure_ascii=False,
+            indent=4
+        )
+
+    # -------------------------
+    # 未入力チェック
+    # -------------------------
+
+    for record in records:
+
+        if is_blank(record["title"]):
+            print(
+                f'⚠ TVer単発 {record["no"]} の番組名が未入力です'
+            )
+
+        if is_blank(record["members"]):
+            print(
+                f'⚠ TVer単発 {record["no"]} の出演者が未入力です'
+            )
+
+        if is_blank(record["date"]):
+            print(
+                f'⚠ TVer単発 {record["no"]} の配信開始日が未入力です'
+            )
+
+        if is_blank(record["ranking_type"]):
+            print(
+                f'⚠ TVer単発 {record["no"]} のランキング種別が未入力です'
+            )
+
+        if record["available"] and is_blank(record["url"]):
+            print(
+                f'⚠ TVer単発 {record["no"]} は配信中ですがURLが未入力です'
+            )
+
+        if record["available"] and is_blank(record["thumbnail"]):
+            print(
+                f'⚠ TVer単発 {record["no"]} は配信中ですがサムネイルURLが未入力です'
+            )
+
+        if not record["ranking_history"]:
+            print(
+                f'⚠ TVer単発 {record["no"]} の順位データがありません'
+            )
+
+        if record["likes"] is None:
+            print(
+                f'⚠ TVer単発 {record["no"]} の高評価が未入力です'
+            )
+
+    print("tver_single.json を更新しました")
+
 def export_locipo():
 
     cards = pd.read_excel(
@@ -533,5 +806,6 @@ def export_update():
 
 export_youtube()
 export_itadakishasu()
+export_tver_single()
 export_locipo()
 export_update()

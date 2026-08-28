@@ -3,6 +3,7 @@ const image = document.getElementById("dashboardImage");
 const youtubeBtn = document.getElementById("youtubeBtn");
 const itadakishasuBtn = document.getElementById("itadakishasuBtn");
 const locipoBtn = document.getElementById("locipoBtn");
+const tverSingleBtn = document.getElementById("tverSingleBtn");
 
 const SERVICES = {
 
@@ -22,6 +23,12 @@ const SERVICES = {
         button: "Locipoで見る",
         thumbnail: false,
         available: false
+    },
+
+    tverSingle: {
+        button: "TVerで見る",
+        thumbnail: false,
+        available: false
     }
 
 };
@@ -36,6 +43,7 @@ youtubeBtn.addEventListener("click", () => {
     youtubeBtn.classList.add("active");
     itadakishasuBtn.classList.remove("active");
     locipoBtn.classList.remove("active");
+    tverSingleBtn.classList.remove("active");
 });
 
 itadakishasuBtn.addEventListener("click", () => {
@@ -48,6 +56,7 @@ itadakishasuBtn.addEventListener("click", () => {
     youtubeBtn.classList.remove("active");
     itadakishasuBtn.classList.add("active");
     locipoBtn.classList.remove("active");
+    tverSingleBtn.classList.remove("active");
 });
 
 locipoBtn.addEventListener("click", () => {
@@ -60,6 +69,23 @@ locipoBtn.addEventListener("click", () => {
     youtubeBtn.classList.remove("active");
     itadakishasuBtn.classList.remove("active");
     locipoBtn.classList.add("active");
+    tverSingleBtn.classList.remove("active");
+});
+
+tverSingleBtn.addEventListener("click", () => {
+
+    // グラフ画像を非表示
+    image.style.display = "none";
+
+    loadVideos("data/tver_single.json", {
+        service: "tverSingle"
+    });
+
+    youtubeBtn.classList.remove("active");
+    itadakishasuBtn.classList.remove("active");
+    locipoBtn.classList.remove("active");
+    tverSingleBtn.classList.add("active");
+
 });
 
 const updateDate = document.getElementById("updateDate");
@@ -167,9 +193,14 @@ function createVideoCard(video, options) {
 
             <div class="video-info">
 
-                <div class="video-week">
-                    ${video.week}
-                </div>
+                ${options.service !== "tverSingle"
+                    ? `
+                        <div class="video-week">
+                            ${video.week}
+                        </div>
+                    `
+                    : ""
+                }
 
                 <h3 class="video-title">
                     ${video.title}
@@ -209,6 +240,25 @@ function createVideoCard(video, options) {
                     : ""
                 }
 
+                ${options.service === "tverSingle" &&
+                video.ranking_type &&
+                video.ranking_type !== "nan"
+                    ? `
+                        <div class="video-views">
+
+                            <span class="label">
+                                🏆 ランキング種別
+                            </span>
+
+                            <span class="count ranking-type" style="font-weight: 400; font-size: 16px;">
+                                ${video.ranking_type}
+                            </span>
+
+                        </div>
+                    `
+                    : ""
+                }
+
             ${options.service === "youtube" && video.views_history?.length
                 ? `
                     <div class="video-views">
@@ -238,6 +288,38 @@ function createVideoCard(video, options) {
 
                         <span class="count ranking-history">
                             ${video.ranking_history.join(" → ")}
+                        </span>
+
+                    </div>
+                `
+                : ""
+            }
+
+           ${options.service === "tverSingle" && video.ranking_history?.length
+                ? `
+                    <div class="video-views">
+
+                        <span class="label">
+                            📊 順位推移
+                        </span>
+
+                        <span class="count ranking-history">
+                            ${
+                                video.ranking_history
+                                    .slice(0, 7)
+                                    .filter(value => value !== "")
+                                    .some(value => value !== "圏外")
+                                    ? video.ranking_history
+                                        .slice(0, 7)
+                                        .filter(value => value !== "")
+                                        .map((value, index) =>
+                                            index === 0
+                                                ? `<strong>${value}</strong>`
+                                                : value
+                                        )
+                                        .join(" → ")
+                                    : "<strong>ランクインなし</strong>"
+                            }
                         </span>
 
                     </div>
@@ -353,6 +435,15 @@ function updateSortOptions(service) {
             <option value="ranking-asc">順位が良い順</option>
         `;
 
+    } else if (service === "tverSingle") {
+
+        sortSelect.innerHTML = `
+            <option value="newest">新しい順</option>
+            <option value="oldest">古い順</option>
+            <option value="likes-desc">高評価が多い順</option>
+            <option value="likes-asc">高評価が少ない順</option>
+            <option value="ranking-asc">順位が良い順</option>
+        `;
     }
 
     // サービスを切り替えたら新しい順に戻す
