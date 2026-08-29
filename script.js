@@ -1,6 +1,7 @@
 const image = document.getElementById("dashboardImage");
 
 const youtubeBtn = document.getElementById("youtubeBtn");
+const performanceBtn = document.getElementById("performanceBtn");
 const itadakishasuBtn = document.getElementById("itadakishasuBtn");
 const locipoBtn = document.getElementById("locipoBtn");
 const tverSingleBtn = document.getElementById("tverSingleBtn");
@@ -8,6 +9,12 @@ const tverSingleBtn = document.getElementById("tverSingleBtn");
 const SERVICES = {
 
     youtube: {
+        button: "YouTubeで見る",
+        thumbnail: true,
+        available: true
+    },
+
+    performance: {
         button: "YouTubeで見る",
         thumbnail: true,
         available: true
@@ -41,6 +48,21 @@ youtubeBtn.addEventListener("click", () => {
     });
 
     youtubeBtn.classList.add("active");
+    performanceBtn.classList.remove("active");
+    itadakishasuBtn.classList.remove("active");
+    locipoBtn.classList.remove("active");
+    tverSingleBtn.classList.remove("active");
+});
+
+performanceBtn.addEventListener("click", () => {
+    image.src = "images/performance_layout.png?t=" + Date.now();
+
+    loadVideos("data/performance.json", {
+        service: "performance"
+    });
+
+    youtubeBtn.classList.remove("active");
+    performanceBtn.classList.add("active");
     itadakishasuBtn.classList.remove("active");
     locipoBtn.classList.remove("active");
     tverSingleBtn.classList.remove("active");
@@ -54,6 +76,7 @@ itadakishasuBtn.addEventListener("click", () => {
     });
 
     youtubeBtn.classList.remove("active");
+    performanceBtn.classList.remove("active");
     itadakishasuBtn.classList.add("active");
     locipoBtn.classList.remove("active");
     tverSingleBtn.classList.remove("active");
@@ -67,6 +90,7 @@ locipoBtn.addEventListener("click", () => {
     });
 
     youtubeBtn.classList.remove("active");
+    performanceBtn.classList.remove("active");
     itadakishasuBtn.classList.remove("active");
     locipoBtn.classList.add("active");
     tverSingleBtn.classList.remove("active");
@@ -82,6 +106,7 @@ tverSingleBtn.addEventListener("click", () => {
     });
 
     youtubeBtn.classList.remove("active");
+    performanceBtn.classList.remove("active");
     itadakishasuBtn.classList.remove("active");
     locipoBtn.classList.remove("active");
     tverSingleBtn.classList.add("active");
@@ -193,7 +218,7 @@ function createVideoCard(video, options) {
 
             <div class="video-info">
 
-                ${options.service !== "tverSingle"
+                ${options.service !== "tverSingle" && options.service !== "performance"
                     ? `
                         <div class="video-week">
                             ${video.week}
@@ -259,7 +284,7 @@ function createVideoCard(video, options) {
                     : ""
                 }
 
-            ${options.service === "youtube" && video.views_history?.length
+            ${(options.service === "youtube" || options.service === "performance") && video.views_history?.length
                 ? `
                     <div class="video-views">
 
@@ -327,20 +352,25 @@ function createVideoCard(video, options) {
                 : ""
             }
 
-                <div class="video-members">
+                ${options.service !== "performance"
+                    ? `
+                        <div class="video-members">
 
-                    <span class="label">
-                        ${options.service === "locipo" ? "🏫 学校" : "👤 出演者"}
-                    </span>
+                            <span class="label">
+                                ${options.service === "locipo" ? "🏫 学校" : "👤 出演者"}
+                            </span>
 
-                    <span class="members">
-                        ${options.service === "locipo"
-                            ? video.school
-                            : video.members.replaceAll("|", "・")
-                        }
-                    </span>
+                            <span class="members">
+                                ${options.service === "locipo"
+                                    ? video.school
+                                    : video.members.replaceAll("|", "・")
+                                }
+                            </span>
 
-                </div>
+                        </div>
+                    `
+                    : ""
+                }
 
                 ${available
                     ? `<a href="${video.url}" target="_blank">
@@ -407,6 +437,15 @@ function loadVideos(jsonFile, options) {
 function updateSortOptions(service) {
 
     if (service === "youtube") {
+
+        sortSelect.innerHTML = `
+            <option value="newest">新しい順</option>
+            <option value="oldest">古い順</option>
+            <option value="views-desc">再生回数が多い順</option>
+            <option value="views-asc">再生回数が少ない順</option>
+        `;
+
+    } else if (service === "performance") {
 
         sortSelect.innerHTML = `
             <option value="newest">新しい順</option>

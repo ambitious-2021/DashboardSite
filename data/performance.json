@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "ride",
+        "date": "2025-03-29",
+        "views": 121000,
+        "views_history": [
+            50000,
+            70000,
+            90000,
+            100000,
+            110000,
+            114000,
+            121000
+        ],
+        "url": "https://youtu.be/-NiNOLVj7Vw",
+        "thumbnail": "https://img.youtube.com/vi/-NiNOLVj7Vw/maxresdefault.jpg",
+        "available": false
+    },
+    {
+        "id": 2,
+        "title": "Reach for the sky",
+        "date": "2025-09-02",
+        "views": 313000,
+        "views_history": [
+            86000,
+            126000,
+            176000,
+            215000,
+            244000,
+            270000,
+            313000
+        ],
+        "url": "https://youtu.be/gJwpN0k0oiU",
+        "thumbnail": "https://img.youtube.com/vi/gJwpN0k0oiU/maxresdefault.jpg",
+        "available": true
+    },
+    {
+        "id": 3,
+        "title": "NAVIGATOR",
+        "date": "2025-10-07",
+        "views": 222000,
+        "views_history": [
+            92000,
+            130000,
+            154000,
+            171000,
+            187000,
+            205000,
+            222000
+        ],
+        "url": "https://youtu.be/tPl45DqvPn8",
+        "thumbnail": "https://img.youtube.com/vi/tPl45DqvPn8/maxresdefault.jpg",
+        "available": true
+    }
+]

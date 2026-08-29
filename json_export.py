@@ -9,6 +9,7 @@ YOUTUBE_FILE = BASE_DIR.parent / "YouTubeDashboard" / "data" / "data.xlsx"
 TVER_FILE = BASE_DIR.parent / "TVerDashboard" / "data" / "data.xlsx"
 LOCIPO_FILE = BASE_DIR.parent / "LocipoDashboard" / "data" / "data.xlsx"
 TVER_SINGLE_FILE = BASE_DIR.parent / "TVerDashboard" / "data" / "tver_single.xlsx"
+PERFORMANCE_FILE = BASE_DIR.parent / "YouTubeDashboard" / "data" / "performance.xlsx"
 
 OUTPUT_DIR = BASE_DIR / "data"
 
@@ -147,6 +148,122 @@ def export_youtube():
             )
 
     print("youtube.json を更新しました")
+
+def export_performance():
+
+    cards = pd.read_excel(
+        PERFORMANCE_FILE,
+        sheet_name="Cards"
+    )
+
+    carddata = pd.read_excel(
+        PERFORMANCE_FILE,
+        sheet_name="CardData",
+        header=None
+    )
+
+    records = []
+
+    for _, card in cards.iterrows():
+
+        views = None
+        views_history = []
+
+        # IDに対応する列を探す
+        id_number = str(card["ID"]).strip()
+
+        for col in range(1, carddata.shape[1]):
+
+            if str(carddata.iloc[0, col]).strip() == id_number:
+
+                # Day1～最新までの再生回数
+                values = carddata.iloc[1:, col].dropna()
+
+                for value in values:
+
+                    if not isinstance(value, (int, float)):
+                        continue
+
+                    if isinstance(value, float) and value.is_integer():
+                        value = int(value)
+
+                    views_history.append(value)
+
+                if len(views_history) > 0:
+                    views = views_history[-1]
+
+                break
+
+        # 公開日
+        date = pd.to_datetime(
+            card["公開日"]
+        ).strftime("%Y-%m-%d")
+
+        # YouTubeサムネイル
+        thumbnail = ""
+
+        url = str(card["URL"]) if pd.notna(card["URL"]) else ""
+
+        if url:
+            video_id = url.rstrip("/").split("/")[-1]
+
+            thumbnail = (
+                "https://img.youtube.com/"
+                "vi/"
+                f"{video_id}"
+                "/maxresdefault.jpg"
+            )
+
+        records.append({
+            "id": int(card["ID"]),
+            "title": str(card["動画タイトル"]),
+            "date": date,
+            "views": views,
+            "views_history": views_history,
+            "url": url,
+            "thumbnail": thumbnail,
+            "available": bool(
+                card["配信中"]
+            ) if pd.notna(card["配信中"]) else False
+        })
+
+    with open(
+        OUTPUT_DIR / "performance.json",
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            records,
+            f,
+            ensure_ascii=False,
+            indent=4
+        )
+
+    # 未入力チェック
+    for record in records:
+
+        if is_blank(record["title"]):
+            print(
+                f'⚠ パフォーマンス {record["id"]} の動画タイトルが未入力です'
+            )
+
+        if is_blank(record["date"]):
+            print(
+                f'⚠ パフォーマンス {record["id"]} の公開日が未入力です'
+            )
+
+        if is_blank(record["url"]):
+            print(
+                f'⚠ パフォーマンス {record["id"]} のURLが未入力です'
+            )
+
+        if record["views"] is None:
+            print(
+                f'⚠ パフォーマンス {record["id"]} の再生回数が未入力です'
+            )
+
+    print("performance.json を更新しました")
 
 def export_itadakishasu():
 
@@ -805,6 +922,7 @@ def export_update():
     print("update.json を更新しました")
 
 export_youtube()
+export_performance()
 export_itadakishasu()
 export_tver_single()
 export_locipo()
