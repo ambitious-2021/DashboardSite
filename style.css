@@ -107,6 +107,10 @@ body {
 
     max-width: 1300px;
 
+    margin: 0 auto;
+
+    display: block;
+
     border-radius: 12px;
 
     box-shadow:0 8px 25px rgba(0,0,0,.18);

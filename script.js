@@ -42,6 +42,7 @@ const SERVICES = {
 
 youtubeBtn.addEventListener("click", () => {
     image.src = "images/youtube_layout.png?t=" + Date.now();
+    image.style.display = "block";
 
     loadVideos("data/youtube.json", {
         service: "youtube"
@@ -56,6 +57,7 @@ youtubeBtn.addEventListener("click", () => {
 
 performanceBtn.addEventListener("click", () => {
     image.src = "images/performance_layout.png?t=" + Date.now();
+    image.style.display = "block";
 
     loadVideos("data/performance.json", {
         service: "performance"
@@ -70,6 +72,7 @@ performanceBtn.addEventListener("click", () => {
 
 itadakishasuBtn.addEventListener("click", () => {
     image.src = "images/tver_layout.png?t=" + Date.now();
+    image.style.display = "block";
 
     loadVideos("data/itadakishasu.json", {
         service: "itadakishasu"
@@ -84,6 +87,7 @@ itadakishasuBtn.addEventListener("click", () => {
 
 locipoBtn.addEventListener("click", () => {
     image.src = "images/locipo_layout.png?t=" + Date.now();
+    image.style.display = "block";
 
     loadVideos("data/locipo.json", {
         service: "locipo"
@@ -402,8 +406,16 @@ function loadVideos(jsonFile, options) {
             currentVideos = data;
             currentService = options.service;
 
+            memberFilter.style.display =
+                currentService === "performance"
+                    ? "none"
+                    : "";
+
             updateSortOptions(currentService);
-            updateMemberFilter();
+
+            if (currentService !== "performance") {
+                updateMemberFilter();
+            }
 
 
             if (data.length === 0) {
@@ -557,7 +569,10 @@ function renderVideos() {
             keyword === "" ||
             text.includes(keyword);
 
-        const filterValue = memberFilter.value;
+        const filterValue =
+            currentService === "performance"
+                ? ""
+                : memberFilter.value;
 
         const matchesFilter =
             filterValue === "" ||
