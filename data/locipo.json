@@ -353,6 +353,21 @@
         "school": "昭和高校",
         "url": "https://locipo.jp/creative/eeb19e1a-cd9d-4cfa-b37c-e8c81fd36d73",
         "thumbnail": "https://images.streaks.jp/locipo-prod/medias/c3db03722c5c47fb8c28d563fdba94b8/posters/676abd12-153d-4c3c-a4e7-5ab9386b9a7a.jpg",
+        "available": false
+    },
+    {
+        "id": 18,
+        "week": "2026-09-01",
+        "title": "永岡蓮王・山中一輝",
+        "date": "2026-09-02",
+        "members": "永岡蓮王・山中一輝",
+        "ranking_history": [
+            "3位"
+        ],
+        "comments": 37,
+        "school": "高蔵高校",
+        "url": "https://locipo.jp/creative/94fe3ac3-7d91-4a4d-9691-a1d846d6682e",
+        "thumbnail": "https://images.streaks.jp/locipo-prod/medias/22ac7b3fc84b4e5b83666b0dc69bee64/posters/f8323a0a-78ce-443a-b591-92994e35809c.jpg",
         "available": true
     }
 ]

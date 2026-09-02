@@ -42,6 +42,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -52,6 +53,7 @@
             2126,
             2242,
             2445,
+            null,
             null,
             null,
             null,
@@ -130,6 +132,7 @@
             "圏外",
             "圏外",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -167,6 +170,7 @@
             588,
             600,
             613,
+            null,
             null,
             null
         ],
@@ -218,6 +222,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -228,6 +233,7 @@
             901,
             953,
             1057,
+            null,
             null,
             null,
             null,
@@ -306,6 +312,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -321,6 +328,7 @@
             771,
             812,
             869,
+            null,
             null,
             null,
             null,
@@ -394,6 +402,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -409,6 +418,7 @@
             638,
             674,
             726,
+            null,
             null,
             null,
             null,
@@ -482,6 +492,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "圏外",
             "圏外"
         ],
         "likes_history": [
@@ -520,7 +531,8 @@
             3673,
             3680,
             3702,
-            3721
+            3721,
+            3745
         ],
         "likes": 2194,
         "url": "https://tver.jp/episodes/ep8oqmy3lf",
@@ -536,6 +548,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "39位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -602,6 +615,7 @@
             2876,
             2886,
             2902,
+            2928,
             null,
             null,
             null,
@@ -630,6 +644,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "",
             "",
             "",
             "",
@@ -696,6 +711,7 @@
             null,
             null,
             null,
+            null,
             null
         ],
         "likes": 2302,
@@ -712,6 +728,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "43位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -771,6 +788,7 @@
             1958,
             1981,
             1999,
+            2022,
             null,
             null,
             null,
@@ -800,6 +818,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "41位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -852,6 +871,7 @@
             1417,
             1447,
             1465,
+            1490,
             null,
             null,
             null,
@@ -895,6 +915,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "圏外",
             "",
             "",
             "",
@@ -933,6 +954,7 @@
             1691,
             1807,
             1899,
+            1979,
             null,
             null,
             null,
@@ -1010,11 +1032,13 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
             440,
             597,
+            688,
             null,
             null,
             null,
@@ -1050,7 +1074,7 @@
             null,
             null
         ],
-        "likes": 597,
+        "likes": 688,
         "url": "https://tver.jp/episodes/epbgmfa0ow",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epbgmfa0ow.jpg",
         "available": true
@@ -1064,6 +1088,7 @@
         "ranking_type": "関西発バラエティ",
         "ranking_history": [
             "44位",
+            "圏外",
             "",
             "",
             "",
@@ -1102,6 +1127,7 @@
         ],
         "likes_history": [
             675,
+            930,
             null,
             null,
             null,
@@ -1138,7 +1164,7 @@
             null,
             null
         ],
-        "likes": 675,
+        "likes": 930,
         "url": "https://tver.jp/episodes/epuoh70354",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epuoh70354.jpg",
         "available": true
