@@ -69,6 +69,18 @@
         "members": "永岡蓮王・井上一太",
         "url": "https://tver.jp/episodes/epsqkuuj0q",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epsqkuuj0q.jpg",
+        "available": false
+    },
+    {
+        "id": 7,
+        "week": "#7",
+        "title": "絶品いただきシャス！ #7",
+        "date": "2026-09-04",
+        "likes": 377,
+        "best_ranking": "",
+        "members": "真弓孟之",
+        "url": "https://tver.jp/episodes/eparxo9phf",
+        "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/eparxo9phf.jpg",
         "available": true
     }
 ]
