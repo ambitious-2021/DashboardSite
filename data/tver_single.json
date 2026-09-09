@@ -49,6 +49,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -59,6 +60,7 @@
             2126,
             2242,
             2445,
+            null,
             null,
             null,
             null,
@@ -151,6 +153,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -188,6 +191,7 @@
             588,
             600,
             613,
+            null,
             null,
             null,
             null,
@@ -253,6 +257,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -263,6 +268,7 @@
             901,
             953,
             1057,
+            null,
             null,
             null,
             null,
@@ -355,6 +361,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -370,6 +377,7 @@
             771,
             812,
             869,
+            null,
             null,
             null,
             null,
@@ -457,6 +465,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -472,6 +481,7 @@
             638,
             674,
             726,
+            null,
             null,
             null,
             null,
@@ -559,6 +569,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "圏外",
             "圏外"
         ],
         "likes_history": [
@@ -604,7 +615,8 @@
             3811,
             3838,
             3863,
-            3899
+            3899,
+            3915
         ],
         "likes": 2194,
         "url": "https://tver.jp/episodes/ep8oqmy3lf",
@@ -620,6 +632,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "39位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -700,6 +713,7 @@
             3010,
             3033,
             3065,
+            3079,
             null,
             null,
             null,
@@ -728,6 +742,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "",
             "",
             "",
             "",
@@ -808,6 +823,7 @@
             null,
             null,
             null,
+            null,
             null
         ],
         "likes": 2302,
@@ -824,6 +840,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "43位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -897,6 +914,7 @@
             2119,
             2151,
             2182,
+            2208,
             null,
             null,
             null,
@@ -926,6 +944,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "41位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -992,6 +1011,7 @@
             1598,
             1627,
             1647,
+            1677,
             null,
             null,
             null,
@@ -1030,6 +1050,7 @@
             "31位",
             "49位",
             "49位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -1087,6 +1108,7 @@
             2232,
             2281,
             2334,
+            2367,
             null,
             null,
             null,
@@ -1171,6 +1193,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -1183,6 +1206,7 @@
             987,
             1027,
             1044,
+            1058,
             null,
             null,
             null,
@@ -1239,6 +1263,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "圏外",
             "",
             "",
             "",
@@ -1284,6 +1309,7 @@
             1519,
             1625,
             1691,
+            1749,
             null,
             null,
             null,
@@ -1375,6 +1401,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -1382,6 +1409,7 @@
             2514,
             2945,
             3132,
+            3277,
             null,
             null,
             null,
@@ -1422,7 +1450,7 @@
             null,
             null
         ],
-        "likes": 3132,
+        "likes": 3277,
         "url": "https://tver.jp/episodes/epes3c6i6w",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epes3c6i6w.jpg",
         "available": true
@@ -1430,12 +1458,13 @@
     {
         "id": 15,
         "no": "15",
-        "title": "関西ジュニア ノーフィルター ～殻、破ル。～ #6",
+        "title": "関西ジュニア ノーフィルター ～殻、破ル。～ #7",
         "date": "2026-09-08",
         "members": "大内リオン|山中一輝",
         "ranking_type": "関西発バラエティ",
         "ranking_history": [
             "43位",
+            "圏外",
             "",
             "",
             "",
@@ -1481,6 +1510,7 @@
         ],
         "likes_history": [
             738,
+            956,
             null,
             null,
             null,
@@ -1524,7 +1554,7 @@
             null,
             null
         ],
-        "likes": 738,
+        "likes": 956,
         "url": "https://tver.jp/episodes/ep8dnojqxa",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/ep8dnojqxa.jpg",
         "available": true
