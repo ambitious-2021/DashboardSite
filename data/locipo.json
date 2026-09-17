@@ -388,12 +388,29 @@
             "1位",
             "1位",
             "2位",
+            "2位",
             "2位"
         ],
-        "comments": 165,
+        "comments": 173,
         "school": "大須商店街",
         "url": "https://locipo.jp/creative/84e7d69d-5343-4d48-b754-607dd54d9909",
         "thumbnail": "https://images.streaks.jp/locipo-prod/medias/56b6436ae08b4e9187c69314a95ad6d1/posters/cd144c99-d593-43d9-81ad-4ebb484caef8.png",
+        "available": false
+    },
+    {
+        "id": 20,
+        "week": "2026-09-15",
+        "title": "真弓孟之・井上一太",
+        "date": "2026-09-16",
+        "members": "真弓孟之・井上一太",
+        "ranking_history": [
+            "2位",
+            "1位"
+        ],
+        "comments": 104,
+        "school": "大須商店街",
+        "url": "https://locipo.jp/creative/1fe68dc2-902f-451c-91a7-08a49168b4ee",
+        "thumbnail": "https://images.streaks.jp/locipo-prod/medias/bf9fefd54ea94e959cbf3951432d29fd/posters/3fe2b233-8f4c-4256-a0f1-ead0e035315c.jpg",
         "available": true
     }
 ]
