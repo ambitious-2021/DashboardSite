@@ -60,6 +60,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -70,6 +71,7 @@
             2126,
             2242,
             2445,
+            null,
             null,
             null,
             null,
@@ -184,6 +186,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -221,6 +224,7 @@
             588,
             600,
             613,
+            null,
             null,
             null,
             null,
@@ -308,6 +312,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -318,6 +323,7 @@
             901,
             953,
             1057,
+            null,
             null,
             null,
             null,
@@ -432,6 +438,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -447,6 +454,7 @@
             771,
             812,
             869,
+            null,
             null,
             null,
             null,
@@ -556,6 +564,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -571,6 +580,7 @@
             638,
             674,
             726,
+            null,
             null,
             null,
             null,
@@ -680,6 +690,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "圏外",
             "圏外"
         ],
         "likes_history": [
@@ -736,12 +747,13 @@
             4019,
             4049,
             4059,
-            4095
+            4095,
+            4136
         ],
         "likes": 2194,
         "url": "https://tver.jp/episodes/ep8oqmy3lf",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/ep8oqmy3lf.jpg",
-        "available": true
+        "available": false
     },
     {
         "id": 7,
@@ -752,6 +764,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "39位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -854,6 +867,7 @@
             3204,
             3224,
             3256,
+            3301,
             null,
             null,
             null,
@@ -865,7 +879,7 @@
         "likes": 1876,
         "url": "https://tver.jp/episodes/epzc7f94ep",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epzc7f94ep.jpg",
-        "available": true
+        "available": false
     },
     {
         "id": 8,
@@ -882,6 +896,7 @@
             "圏外",
             "圏外",
             "圏外",
+            "",
             "",
             "",
             "",
@@ -984,6 +999,7 @@
             null,
             null,
             null,
+            null,
             null
         ],
         "likes": 2302,
@@ -1000,6 +1016,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "43位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -1095,6 +1112,7 @@
             2347,
             2372,
             2400,
+            2449,
             null,
             null,
             null,
@@ -1113,7 +1131,7 @@
         "likes": 1429,
         "url": "https://tver.jp/episodes/epmjkylo0m",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epmjkylo0m.jpg",
-        "available": true
+        "available": false
     },
     {
         "id": 10,
@@ -1124,6 +1142,7 @@
         "ranking_type": "バラエティ(関西発)",
         "ranking_history": [
             "41位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -1212,6 +1231,7 @@
             1823,
             1840,
             1874,
+            1928,
             null,
             null,
             null,
@@ -1237,7 +1257,7 @@
         "likes": 1191,
         "url": "https://tver.jp/episodes/epz0gfrnbo",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epz0gfrnbo.jpg",
-        "available": true
+        "available": false
     },
     {
         "id": 11,
@@ -1250,6 +1270,7 @@
             "31位",
             "49位",
             "49位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -1329,6 +1350,7 @@
             2544,
             2563,
             2596,
+            2662,
             null,
             null,
             null,
@@ -1361,7 +1383,7 @@
         "likes": 1807,
         "url": "https://tver.jp/episodes/ep9x4mkdpk",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/ep9x4mkdpk.jpg",
-        "available": true
+        "available": false
     },
     {
         "id": 12,
@@ -1371,6 +1393,7 @@
         "members": "真弓孟之|永岡蓮王",
         "ranking_type": "nan",
         "ranking_history": [
+            "",
             "",
             "",
             "",
@@ -1480,6 +1503,7 @@
             null,
             null,
             null,
+            null,
             null
         ],
         "likes": 987,
@@ -1496,6 +1520,7 @@
         "ranking_type": "関西発バラエティ",
         "ranking_history": [
             "44位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -1570,6 +1595,7 @@
             1974,
             2002,
             2036,
+            2104,
             null,
             null,
             null,
@@ -1609,7 +1635,7 @@
         "likes": 1625,
         "url": "https://tver.jp/episodes/epuoh70354",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epuoh70354.jpg",
-        "available": true
+        "available": false
     },
     {
         "id": 14,
@@ -1619,6 +1645,7 @@
         "members": "真弓孟之|岡佑吏|永岡蓮王|井上一太|浦陸斗|大内リオン|山中一輝",
         "ranking_type": "nan",
         "ranking_history": [
+            "",
             "",
             "",
             "",
@@ -1728,6 +1755,7 @@
             null,
             null,
             null,
+            null,
             null
         ],
         "likes": 3513,
@@ -1744,6 +1772,7 @@
         "ranking_type": "関西発バラエティ",
         "ranking_history": [
             "43位",
+            "圏外",
             "圏外",
             "圏外",
             "圏外",
@@ -1811,6 +1840,7 @@
             1496,
             1525,
             1573,
+            1643,
             null,
             null,
             null,
@@ -1857,7 +1887,7 @@
         "likes": 1363,
         "url": "https://tver.jp/episodes/ep8dnojqxa",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/ep8dnojqxa.jpg",
-        "available": true
+        "available": false
     },
     {
         "id": 16,
@@ -1867,6 +1897,7 @@
         "members": "真弓孟之|永岡蓮王",
         "ranking_type": "nan",
         "ranking_history": [
+            "",
             "",
             "",
             "",
@@ -1933,6 +1964,7 @@
             698,
             708,
             721,
+            738,
             null,
             null,
             null,
@@ -2044,6 +2076,7 @@
             "",
             "",
             "",
+            "",
             ""
         ],
         "likes_history": [
@@ -2052,6 +2085,7 @@
             815,
             890,
             977,
+            1087,
             null,
             null,
             null,
@@ -2102,9 +2136,9 @@
             null,
             null
         ],
-        "likes": 977,
+        "likes": 1087,
         "url": "https://tver.jp/episodes/epn4n62wr5",
         "thumbnail": "https://image-cdn.tver.jp/w=1200,dpr=1/images/content/thumbnail/episode/xlarge/epn4n62wr5.jpg",
-        "available": true
+        "available": false
     }
 ]
