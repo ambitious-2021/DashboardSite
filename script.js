@@ -259,7 +259,7 @@ function createVideoCard(video, options) {
 
                             <span class="count">
                                 ${video.best_ranking === null || video.best_ranking === ""
-                                    ? "圏外"
+                                    ? "ランクインなし"
                                     : video.best_ranking + "位"
                                 }
                             </span>
