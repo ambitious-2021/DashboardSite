@@ -417,5 +417,40 @@
         "url": "https://locipo.jp/creative/1fe68dc2-902f-451c-91a7-08a49168b4ee",
         "thumbnail": "https://images.streaks.jp/locipo-prod/medias/bf9fefd54ea94e959cbf3951432d29fd/posters/3fe2b233-8f4c-4256-a0f1-ead0e035315c.jpg",
         "available": false
+    },
+    {
+        "id": 21,
+        "week": "2026-09-29",
+        "title": "真弓孟之・大内リオン",
+        "date": "2026-09-30",
+        "members": "真弓孟之・大内リオン",
+        "ranking_history": [
+            "3位",
+            "2位",
+            "3位",
+            "2位",
+            "3位",
+            "2位"
+        ],
+        "comments": 80,
+        "school": "岐阜県高山市",
+        "url": "https://locipo.jp/creative/6b401635-c524-44ac-aac0-e3542ce0d93b",
+        "thumbnail": "",
+        "available": false
+    },
+    {
+        "id": 22,
+        "week": "2026-10-06",
+        "title": "真弓孟之・大内リオン",
+        "date": "2026-10-07",
+        "members": "真弓孟之・大内リオン",
+        "ranking_history": [
+            "4位"
+        ],
+        "comments": 28,
+        "school": "岐阜県高山市",
+        "url": "https://locipo.jp/creative/2957dba2-7998-4acb-a844-426831a0da97",
+        "thumbnail": "https://images.streaks.jp/locipo-prod/medias/6221d8a7aadd49c3adc987eebb617dbb/posters/6f387f0e-4243-4ed5-b3a1-6da4996f6b1b.jpg",
+        "available": true
     }
 ]

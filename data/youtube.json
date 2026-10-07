@@ -400,16 +400,47 @@
         "week": "9月第4週",
         "title": "なつかれ王",
         "date": "2026-09-22",
-        "views": 229000,
+        "views": 236000,
         "views_history": [
             105000,
             154000,
             190000,
             209000,
             221000,
-            229000
+            229000,
+            236000
         ],
         "members": "永岡蓮王|大内リオン",
         "url": "https://youtu.be/w_80PyU0mRU"
+    },
+    {
+        "id": 24,
+        "week": "9月第5週",
+        "title": "おふくろの味",
+        "date": "2026-09-29",
+        "views": 193000,
+        "views_history": [
+            93000,
+            130000,
+            154000,
+            168000,
+            179000,
+            186000,
+            193000
+        ],
+        "members": "真弓孟之|岡佑吏",
+        "url": "https://youtu.be/AFHM1NKlaLI"
+    },
+    {
+        "id": 25,
+        "week": "10月第1週",
+        "title": "岡ちゃん先生",
+        "date": "2026-10-06",
+        "views": 86000,
+        "views_history": [
+            86000
+        ],
+        "members": "真弓孟之|岡佑吏|永岡蓮王|大内リオン",
+        "url": "https://youtu.be/itZUcDZdryA"
     }
 ]
